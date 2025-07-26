@@ -4,11 +4,17 @@
   justify-content: space-between;
   align-items: center;
   padding: 6rem;
-  min-height: 100vh;
+  min-height: 75vh;
+}
+
+.titulo {
+  color: crimson;
+  font-family: monospace;
+  font-size: 36px;
 }
 
 .calculadora {
-  max-width: 400px;
+  max-width: 900px;
   margin: auto;
   padding: 20px;
   border: 1px solid #ccc;
@@ -17,31 +23,73 @@
 }
 
 .numeros {
-  margin-bottom: 10px;
+  margin-bottom: 35px;
 }
 
 .text {
   display: block;
   margin-bottom: 5px;
+  color: crimson;
+  font-weight: bold;
 }
 
 .inputnum {
   width: 100%;
-  padding: 8px;
+  padding: 15px;
   border: 1px solid #ccc;
   border-radius: 5px;
+  font-size: 1.5em;
+}
+
+.botones {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 45px;
+  margin-bottom: 20px;
+}
+
+.reset {
+  text-align: center;
+  width: auto;
+  margin-bottom: 20px;
+
+  background-color: rgb(255, 255, 255);
+  color: red;
+  font-size: 1em;
+  padding: 10px;
+  border: 1px solid red;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+:hover.reset {
+  background-color: red;
+  color: white;
 }
 
 .button {
   font-size: 1.2em;
   padding: 10px;
-  margin-right: 10px;
-  border: 1px solid #ccc;
+  border: 1px solid #1bc0ba;
+  background-color: white;
+  color: #0a4240;
   border-radius: 5px;
   cursor: pointer;
+  margin-bottom: 50px;
+}
+
+:hover.button {
+  background-color: #1bc0ba;
+  color: white;
 }
 
 .resultado {
   margin-top: 10px;
   font-weight: bold;
+  font-size: 36px;
+  text-align: center;
+  color: #003049;
+  margin-bottom: 50px;
 }
